@@ -9,7 +9,9 @@
     "image": "bestlibre/{arch}-calibre-web",
     "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
     "options": {
-        "calibre_library": "/share"
+        "calibre_library": "/share",
+        "SSL Certfile": "",
+        "SSL keyfile": ""
     },
     "schema": {
         "calibre_library": "str"
