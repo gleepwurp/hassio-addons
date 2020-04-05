@@ -2,5 +2,8 @@
     "build_from": {
         "amd64": "lsiobase/ubuntu:bionic",
         "i386": "lsiobase/ubuntu:bionic"
+    },
+    "args": {
+        "CALIBREWEB_RELEASE": "0.6.6"
     }
 }

@@ -63,9 +63,9 @@ COPY root/ /
 EXPOSE 8083
 VOLUME /books /config
 
-# Copy data
-COPY run.sh /
-
-RUN chmod a+x /run.sh
-
-CMD [ "/run.sh" ]
+## Copy data
+#COPY run.sh /
+#
+#RUN chmod a+x /run.sh
+#
+#CMD [ "/run.sh" ]

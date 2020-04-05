@@ -1,6 +1,6 @@
 {
     "name": "Calibre Web",
-    "version": "0.2",
+    "version": "0.3",
     "slug": "calibre-web",
     "description": "Calibre web",
     "url": "https://github.com/gleepwurp/hassio-addons/tree/master/bicbucstriim",
@@ -17,5 +17,7 @@
         "calibre_library": "str"
     },
     "ports": {"8083/tcp": "8083"},
-    "map": ["share:rw"]
+    "ports_description": {"8083/tcp": "Web Interface"},
+    "map": ["share:rw"],
+    "webui": "http://[HOST]:[PORT:8083]"
 }

@@ -1,16 +1,15 @@
 # calibreweb for hass.io
-THIS HAS BEEN COPIED FROM https://github.com/bestlibre/hassio-addon
+Originally copied from https://github.com/bestlibre/hassio-addon
 
-
-[![Build Status](https://travis-ci.org/bestlibre/hassio-addons.svg?branch=master)](https://travis-ci.org/bestlibre/hassio-addons)[![](https://images.microbadger.com/badges/version/bestlibre/armhf-calibreweb.svg)](https://microbadger.com/images/bestlibre/armhf-calibreweb "Get your own version badge on microbadger.com")
 
 ## Description
 
-This addon provide a [calibreweb](https://github.com/janeczku/calibre-web) container for hass.io.
+This addon provide a [calibreweb](https://github.com/janeczku/calibre-web) container for hass.io, based on LinuxServer's Docker implementation (https://hub.docker.com/r/linuxserver/calibre-web/).
 
 ## Configuration
 
 There is no configuration. Follow the [Quick start](https://github.com/janeczku/calibre-web#quick-start) from calibreweb :
 
-- set the path to calibre (ie in `/share`)
+- In the calibreweb initial setup, specify "/books" as the calibre library
+- Your calibre library should be contained under "hassio/share/calibre"
 - use default admin/admin123 user passwd.
