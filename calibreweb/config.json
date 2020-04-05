@@ -7,9 +7,9 @@
     "startup": "after",
     "boot": "auto",
     "image": "bestlibre/{arch}-calibre-web",
-    "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
+    "arch": ["amd64", "i386"],
     "options": {
-        "calibre_library": "/share",
+        "calibre_library": "/share/calibre",
         "SSL Certfile": "",
         "SSL keyfile": ""
     },

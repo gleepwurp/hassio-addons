@@ -10,6 +10,8 @@ This addon provide a [calibreweb](https://github.com/janeczku/calibre-web) conta
 
 There is no configuration. Follow the [Quick start](https://github.com/janeczku/calibre-web#quick-start) from calibreweb :
 
-- In the calibreweb initial setup, specify "/books" as the calibre library
+- In the calibreweb initial setup webpage, specify "/share/calibre" as the calibre library
 - Your calibre library should be contained under "hassio/share/calibre"
 - use default admin/admin123 user passwd.
+
+* The options in the "config" window in Home-Assistant are not enabled/working.
