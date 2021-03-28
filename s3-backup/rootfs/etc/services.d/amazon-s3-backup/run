@@ -6,6 +6,7 @@
 
 bashio::log.info "Starting Amazon S3 Backup..."
 
+export s3_vendor="$(bashio::config 's3_vendor')"
 export AWS_ACCESS_KEY_ID="$(bashio::config 'aws_access_key')"
 export AWS_SECRET_ACCESS_KEY="$(bashio::config 'aws_secret_access_key')"
 

@@ -162,7 +162,7 @@ if __name__ == "__main__":
         logger.critical(f"Configuration error: {err}")
         sys.exit(1)
 
-    s3_bucket = S3Bucket(config.bucket_name,
+    s3_bucket = S3Bucket(config.s3_vendor, config.bucket_name,
                          config.bucket_region, config.storage_class)
 
     supervisor_api = SupervisorAPI(os.getenv("SUPERVISOR_TOKEN"))
