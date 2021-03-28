@@ -29,7 +29,7 @@ class S3Bucket:
 
         logger.debug("Creating S3 client")
         if self.s3_vendor == 'WASABI':
-            self.s3_client = boto3.client("s3", endpoint_url='https://s3.wasabi.com', **aws_config)
+            self.s3_client = boto3.client("s3", endpoint_url='https://s3.wasabisys.com', **aws_config)
         else:
             self.s3_client = boto3.client("s3", **aws_config)
 
