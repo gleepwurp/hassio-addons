@@ -22,7 +22,7 @@
     "hassio_role": "backup",
     "options": {
         "log_level": "info",
-        "s3_vendor": "aws",
+        "s3_vendor": "AWS",
         "aws_access_key": "XXXXXXXXXXXXXXXX",
         "aws_secret_access_key": "XXXXXXXXXXXXXXXX",
         "bucket_name": "my_bucket",
@@ -33,7 +33,7 @@
     },
     "schema": {
         "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
-        "s3_vendor": "list(aws|wasabi)",
+        "s3_vendor": "list(AWS|WASABI)",
         "aws_access_key": "str",
         "aws_secret_access_key": "password",
         "bucket_name": "str",
