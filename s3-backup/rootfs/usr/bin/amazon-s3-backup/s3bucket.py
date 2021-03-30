@@ -65,8 +65,10 @@ class S3Bucket:
         if metadata is not None:
             extra_args["Metadata"] = metadata
 
-        print(f"File: {file}")
         try:
+            print(f"Bucket: {self.bucket_name}")
+            print(f"Key: {key}")
+            print(f"ExtraArgs: {extra_args}")
             logger.info(f"Uploading file [{file}] to S3")
             self.s3_client.upload_file(Filename=file,
                                        Bucket=self.bucket_name,
