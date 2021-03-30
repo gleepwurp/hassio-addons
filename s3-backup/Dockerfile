@@ -25,7 +25,7 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Yannick Moussette <yannick/moussette@gmail.com>" \
+    maintainer="Yannick Moussette <yannick.moussette@gmail.com>" \
     org.opencontainers.image.title="S3 Backup" \
     org.opencontainers.image.description="Automatically upload Home Assistant snapshots to Amazon|Wasabi S3" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \

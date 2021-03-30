@@ -65,6 +65,7 @@ class S3Bucket:
         if metadata is not None:
             extra_args["Metadata"] = metadata
 
+        logger.info(f"File: {file}")
         try:
             logger.info(f"Uploading file [{file}] to S3")
             self.s3_client.upload_file(Filename=file,
