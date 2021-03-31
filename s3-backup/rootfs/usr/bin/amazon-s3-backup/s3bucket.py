@@ -66,15 +66,14 @@ class S3Bucket:
             extra_args["Metadata"] = metadata
 
         try:
-            print(f"Bucket: {self.bucket_name}")
-            print(f"Key: {key}")
-            print(f"ExtraArgs: {extra_args}")
+            logger.debug(f"Bucket: {self.bucket_name}")
+            logger.debug(f"Key: {key}")
+            logger.debug(f"ExtraArgs: {extra_args}")
             logger.info(f"Uploading file [{file}] to S3")
             self.s3_client.upload_file(Filename=file,
                                        Bucket=self.bucket_name,
-                                       Key=key)
-                # ,
-                                       # ExtraArgs=extra_args)
+                                       Key=key,
+                                       ExtraArgs=extra_args)
             logger.info(
                 f"Uploaded file [{key}] to S3 bucket [{self.bucket_name}] using storage class [{self.storage_class}]")
         except boto3.exceptions.S3UploadFailedError as err:
