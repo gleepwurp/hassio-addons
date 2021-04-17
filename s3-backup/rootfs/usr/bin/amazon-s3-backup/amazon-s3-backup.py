@@ -145,7 +145,8 @@ def upload_file(file: Path, s3_bucket: S3Bucket, supervisor_api: SupervisorAPI):
         snapshot_detail = supervisor_api.get_snapshot(slug)
         # DEBUG
         logger.debug(f"SNAPSHOT DETAIL: {snapshot_detail}")
-        metadata_keys = ["type", "name", "date", "homeassistant"]
+        # metadata_keys = ["type", "name", "date", "homeassistant"]
+        metadata_keys = ["type", "name", "date"]
         metadata = {k: snapshot_detail[k]
                     for k in snapshot_detail if k in metadata_keys}
     except SupervisorAPIError as err:
