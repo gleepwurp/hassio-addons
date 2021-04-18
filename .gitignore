@@ -1,0 +1,7 @@
+.idea/aws.xml
+.idea/hassio-addons.iml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/modules.xml
+s3-backup/Pipfile
+s3-backup/Pipfile.lock

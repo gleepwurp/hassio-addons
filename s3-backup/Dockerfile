@@ -8,7 +8,7 @@ COPY rootfs /
 # Setup base
 RUN apk add --no-cache \
     python3 \
-    py3-boto3@edge \
+    py3-boto3 \
     py3-watchdog \
     py3-requests
 
