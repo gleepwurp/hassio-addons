@@ -8,9 +8,11 @@ COPY rootfs /
 # Setup base
 RUN apk add --no-cache \
     python3 \
-    py3-boto3 \
+    python3-pip \
     py3-watchdog \
     py3-requests
+
+RUN pip3 install boto3
 
 # Build arguments
 ARG BUILD_ARCH
