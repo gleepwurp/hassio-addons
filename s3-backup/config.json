@@ -1,6 +1,6 @@
 {
     "name": "S3 Backup",
-    "version": "1.10",
+    "version": "1.11",
     "slug": "s3-backup",
     "description": "Automatically backup Home Assistant snapshots to Amazon/Wasabi S3",
     "url": "http://gitlab.fizban.ca/ymousset/s3-backup",
