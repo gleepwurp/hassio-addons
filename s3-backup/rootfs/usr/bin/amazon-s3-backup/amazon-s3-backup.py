@@ -12,7 +12,7 @@ from config import Config, ConfigError
 from s3bucket import S3Bucket, S3BucketError
 from supervisorapi import SupervisorAPI, SupervisorAPIError
 
-logging.basicConfig()
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
