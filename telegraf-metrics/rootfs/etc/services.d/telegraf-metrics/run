@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start telegraf-metrics service
+# ==============================================================================
+
+bashio::log.info "Starting Telegraf Metrics..."
+
+# Run the collector
+exec python3 /usr/bin/telegraf-metrics/telegraf-metrics.py
